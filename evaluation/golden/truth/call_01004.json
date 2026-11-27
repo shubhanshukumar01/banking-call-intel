@@ -1,0 +1,52 @@
+{
+  "file": "call_01004.txt",
+  "scenario": "sales_loan",
+  "products": [
+    "PL_PERSONAL_LOAN",
+    "CC_CASHBACK"
+  ],
+  "objections": [
+    "already_has_product"
+  ],
+  "mentions": [
+    {
+      "surface": "personal lone",
+      "product_id": "PL_PERSONAL_LOAN"
+    },
+    {
+      "surface": "insta loan",
+      "product_id": "PL_PERSONAL_LOAN"
+    },
+    {
+      "surface": "cashbak card",
+      "product_id": "CC_CASHBACK"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Pooja Nair"
+    },
+    {
+      "type": "PERSON",
+      "value": "Vikram"
+    },
+    {
+      "type": "PHONE",
+      "value": "8237227220"
+    },
+    {
+      "type": "DOB",
+      "value": "fifth September nineteen ninety nine"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "APR_FEE_DISCLOSURE": "met",
+    "TNC_CONSENT": "met"
+  },
+  "identity_verification": "performed",
+  "call_type": "sales",
+  "primary_intent": "loan_enquiry",
+  "sales_outcome": "converted"
+}

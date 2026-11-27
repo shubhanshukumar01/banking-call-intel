@@ -1,0 +1,1062 @@
+{
+  "$defs": {
+    "AgentPerformance": {
+      "properties": {
+        "empathy": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Empathy"
+        },
+        "clarity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clarity"
+        },
+        "product_knowledge": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Knowledge"
+        },
+        "compliance_adherence": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Compliance Adherence"
+        },
+        "notes": {
+          "default": "",
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "title": "AgentPerformance",
+      "type": "object"
+    },
+    "CallProfile": {
+      "properties": {
+        "call_type": {
+          "title": "Call Type",
+          "type": "string"
+        },
+        "primary_intent": {
+          "$ref": "#/$defs/Labeled"
+        },
+        "secondary_intents": {
+          "items": {
+            "$ref": "#/$defs/Labeled"
+          },
+          "title": "Secondary Intents",
+          "type": "array"
+        },
+        "resolution_status": {
+          "$ref": "#/$defs/Labeled"
+        },
+        "sentiment": {
+          "$ref": "#/$defs/Sentiment"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "summary_evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Summary Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "call_type",
+        "primary_intent",
+        "resolution_status",
+        "sentiment",
+        "summary"
+      ],
+      "title": "CallProfile",
+      "type": "object"
+    },
+    "Claim": {
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "default": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ComplianceInsights": {
+      "properties": {
+        "rules": {
+          "items": {
+            "$ref": "#/$defs/RuleResult"
+          },
+          "title": "Rules",
+          "type": "array"
+        },
+        "risk_flags": {
+          "items": {
+            "$ref": "#/$defs/RiskFlag"
+          },
+          "title": "Risk Flags",
+          "type": "array"
+        },
+        "identity_verification": {
+          "$ref": "#/$defs/Labeled"
+        },
+        "misquoted_terms": {
+          "items": {
+            "$ref": "#/$defs/MisquotedTerm"
+          },
+          "title": "Misquoted Terms",
+          "type": "array"
+        }
+      },
+      "required": [
+        "identity_verification"
+      ],
+      "title": "ComplianceInsights",
+      "type": "object"
+    },
+    "CrossSellInsight": {
+      "properties": {
+        "product_id": {
+          "title": "Product Id",
+          "type": "string"
+        },
+        "product_name": {
+          "title": "Product Name",
+          "type": "string"
+        },
+        "accepted": {
+          "title": "Accepted",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "product_id",
+        "product_name",
+        "accepted",
+        "evidence",
+        "confidence"
+      ],
+      "title": "CrossSellInsight",
+      "type": "object"
+    },
+    "CustomerInsights": {
+      "properties": {
+        "needs": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Needs",
+          "type": "array"
+        },
+        "pain_points": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Pain Points",
+          "type": "array"
+        },
+        "churn_risk": {
+          "$ref": "#/$defs/Labeled"
+        },
+        "vulnerability_indicators": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Vulnerability Indicators",
+          "type": "array"
+        }
+      },
+      "required": [
+        "churn_risk"
+      ],
+      "title": "CustomerInsights",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "line": {
+          "title": "Line",
+          "type": "integer"
+        },
+        "speaker": {
+          "title": "Speaker",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "line",
+        "speaker",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "FactOut": {
+      "description": "Atomic grounded fact from the map step (masked quote, original line number).",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "product_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Id"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        },
+        "line": {
+          "title": "Line",
+          "type": "integer"
+        },
+        "speaker": {
+          "title": "Speaker",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "grounding": {
+          "title": "Grounding",
+          "type": "number"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "label",
+        "value",
+        "line",
+        "speaker",
+        "quote",
+        "grounding",
+        "source"
+      ],
+      "title": "FactOut",
+      "type": "object"
+    },
+    "Labeled": {
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "default": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "title": "Labeled",
+      "type": "object"
+    },
+    "MisquotedTerm": {
+      "properties": {
+        "product_id": {
+          "title": "Product Id",
+          "type": "string"
+        },
+        "term": {
+          "title": "Term",
+          "type": "string"
+        },
+        "stated": {
+          "title": "Stated",
+          "type": "string"
+        },
+        "reference": {
+          "title": "Reference",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "numeric_verified": {
+          "title": "Numeric Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "product_id",
+        "term",
+        "stated",
+        "reference",
+        "evidence",
+        "numeric_verified"
+      ],
+      "title": "MisquotedTerm",
+      "type": "object"
+    },
+    "Normalization": {
+      "properties": {
+        "tier": {
+          "title": "Tier",
+          "type": "string"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "tier",
+        "confidence"
+      ],
+      "title": "Normalization",
+      "type": "object"
+    },
+    "ObjectionInsight": {
+      "properties": {
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        },
+        "handled": {
+          "title": "Handled",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "category",
+        "detail",
+        "handled",
+        "evidence",
+        "confidence"
+      ],
+      "title": "ObjectionInsight",
+      "type": "object"
+    },
+    "PrivacyInfo": {
+      "properties": {
+        "pii_masked": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Pii Masked",
+          "type": "object"
+        },
+        "detectors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Detectors",
+          "type": "array"
+        },
+        "vault_stored": {
+          "title": "Vault Stored",
+          "type": "boolean"
+        },
+        "output_pii_findings": {
+          "title": "Output Pii Findings",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "pii_masked",
+        "detectors",
+        "vault_stored",
+        "output_pii_findings"
+      ],
+      "title": "PrivacyInfo",
+      "type": "object"
+    },
+    "ProcessingInfo": {
+      "properties": {
+        "pipeline_version": {
+          "title": "Pipeline Version",
+          "type": "string"
+        },
+        "processed_at": {
+          "title": "Processed At",
+          "type": "string"
+        },
+        "duration_ms": {
+          "title": "Duration Ms",
+          "type": "number"
+        },
+        "stage_ms": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Stage Ms",
+          "type": "object"
+        },
+        "llm_profile": {
+          "title": "Llm Profile",
+          "type": "string"
+        },
+        "models": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Models",
+          "type": "object"
+        },
+        "prompt_versions": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Prompt Versions",
+          "type": "object"
+        },
+        "llm_calls": {
+          "title": "Llm Calls",
+          "type": "integer"
+        },
+        "llm_cache_hits": {
+          "title": "Llm Cache Hits",
+          "type": "integer"
+        },
+        "tokens_in": {
+          "title": "Tokens In",
+          "type": "integer"
+        },
+        "tokens_out": {
+          "title": "Tokens Out",
+          "type": "integer"
+        },
+        "json_repairs": {
+          "title": "Json Repairs",
+          "type": "integer"
+        },
+        "llm_by_role": {
+          "additionalProperties": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object"
+          },
+          "title": "Llm By Role",
+          "type": "object"
+        }
+      },
+      "required": [
+        "pipeline_version",
+        "processed_at",
+        "duration_ms",
+        "stage_ms",
+        "llm_profile",
+        "models",
+        "prompt_versions",
+        "llm_calls",
+        "llm_cache_hits",
+        "tokens_in",
+        "tokens_out",
+        "json_repairs"
+      ],
+      "title": "ProcessingInfo",
+      "type": "object"
+    },
+    "ProductInsight": {
+      "properties": {
+        "product_id": {
+          "title": "Product Id",
+          "type": "string"
+        },
+        "product_name": {
+          "title": "Product Name",
+          "type": "string"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "mentions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mentions",
+          "type": "array"
+        },
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "customer_interest": {
+          "title": "Customer Interest",
+          "type": "string"
+        },
+        "outcome": {
+          "title": "Outcome",
+          "type": "string"
+        },
+        "key_points": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Key Points",
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "default": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "normalization": {
+          "$ref": "#/$defs/Normalization"
+        }
+      },
+      "required": [
+        "product_id",
+        "product_name",
+        "category",
+        "mentions",
+        "role",
+        "customer_interest",
+        "outcome",
+        "normalization"
+      ],
+      "title": "ProductInsight",
+      "type": "object"
+    },
+    "Quality": {
+      "properties": {
+        "status": {
+          "enum": [
+            "validated",
+            "needs_review"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "overall_confidence": {
+          "title": "Overall Confidence",
+          "type": "number"
+        },
+        "claims_total": {
+          "title": "Claims Total",
+          "type": "integer"
+        },
+        "claims_grounded": {
+          "title": "Claims Grounded",
+          "type": "integer"
+        },
+        "claims_dropped_ungrounded": {
+          "title": "Claims Dropped Ungrounded",
+          "type": "integer"
+        },
+        "facts_extracted": {
+          "title": "Facts Extracted",
+          "type": "integer"
+        },
+        "facts_dropped_ungrounded": {
+          "title": "Facts Dropped Ungrounded",
+          "type": "integer"
+        },
+        "critic_checked": {
+          "title": "Critic Checked",
+          "type": "integer"
+        },
+        "critic_rejected": {
+          "title": "Critic Rejected",
+          "type": "integer"
+        },
+        "retries": {
+          "title": "Retries",
+          "type": "integer"
+        },
+        "review_items": {
+          "items": {
+            "$ref": "#/$defs/ReviewItem"
+          },
+          "title": "Review Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "overall_confidence",
+        "claims_total",
+        "claims_grounded",
+        "claims_dropped_ungrounded",
+        "facts_extracted",
+        "facts_dropped_ungrounded",
+        "critic_checked",
+        "critic_rejected",
+        "retries"
+      ],
+      "title": "Quality",
+      "type": "object"
+    },
+    "QuotedTerm": {
+      "properties": {
+        "product_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Product Id"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "number": {
+          "title": "Number",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "numeric_verified": {
+          "title": "Numeric Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "product_id",
+        "description",
+        "number",
+        "evidence",
+        "numeric_verified"
+      ],
+      "title": "QuotedTerm",
+      "type": "object"
+    },
+    "ReviewItem": {
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "reason"
+      ],
+      "title": "ReviewItem",
+      "type": "object"
+    },
+    "RiskFlag": {
+      "properties": {
+        "flag": {
+          "title": "Flag",
+          "type": "string"
+        },
+        "severity": {
+          "title": "Severity",
+          "type": "string"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "flag",
+        "severity",
+        "detail",
+        "evidence",
+        "confidence"
+      ],
+      "title": "RiskFlag",
+      "type": "object"
+    },
+    "RuleResult": {
+      "properties": {
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "severity": {
+          "title": "Severity",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "confidence": {
+          "default": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "status",
+        "severity"
+      ],
+      "title": "RuleResult",
+      "type": "object"
+    },
+    "SalesInsights": {
+      "properties": {
+        "pitch_made": {
+          "title": "Pitch Made",
+          "type": "boolean"
+        },
+        "sales_outcome": {
+          "$ref": "#/$defs/Labeled"
+        },
+        "objections": {
+          "items": {
+            "$ref": "#/$defs/ObjectionInsight"
+          },
+          "title": "Objections",
+          "type": "array"
+        },
+        "buying_signals": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Buying Signals",
+          "type": "array"
+        },
+        "cross_sell": {
+          "items": {
+            "$ref": "#/$defs/CrossSellInsight"
+          },
+          "title": "Cross Sell",
+          "type": "array"
+        },
+        "next_steps": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Next Steps",
+          "type": "array"
+        }
+      },
+      "required": [
+        "pitch_made",
+        "sales_outcome"
+      ],
+      "title": "SalesInsights",
+      "type": "object"
+    },
+    "Sentiment": {
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "title": "End",
+          "type": "string"
+        },
+        "trajectory": {
+          "title": "Trajectory",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "trajectory"
+      ],
+      "title": "Sentiment",
+      "type": "object"
+    },
+    "SourceInfo": {
+      "properties": {
+        "file": {
+          "title": "File",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "raw_lines": {
+          "title": "Raw Lines",
+          "type": "integer"
+        },
+        "kept_lines": {
+          "title": "Kept Lines",
+          "type": "integer"
+        },
+        "turns": {
+          "title": "Turns",
+          "type": "integer"
+        },
+        "chunks_total": {
+          "title": "Chunks Total",
+          "type": "integer"
+        },
+        "chunks_analyzed": {
+          "title": "Chunks Analyzed",
+          "type": "integer"
+        },
+        "raw_tokens": {
+          "title": "Raw Tokens",
+          "type": "integer"
+        },
+        "clean_tokens": {
+          "title": "Clean Tokens",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "file",
+        "sha256",
+        "raw_lines",
+        "kept_lines",
+        "turns",
+        "chunks_total",
+        "chunks_analyzed",
+        "raw_tokens",
+        "clean_tokens"
+      ],
+      "title": "SourceInfo",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "call_id": {
+      "title": "Call Id",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/SourceInfo"
+    },
+    "processing": {
+      "$ref": "#/$defs/ProcessingInfo"
+    },
+    "privacy": {
+      "$ref": "#/$defs/PrivacyInfo"
+    },
+    "call_profile": {
+      "$ref": "#/$defs/CallProfile"
+    },
+    "products": {
+      "items": {
+        "$ref": "#/$defs/ProductInsight"
+      },
+      "title": "Products",
+      "type": "array"
+    },
+    "sales": {
+      "$ref": "#/$defs/SalesInsights"
+    },
+    "customer": {
+      "$ref": "#/$defs/CustomerInsights"
+    },
+    "compliance": {
+      "$ref": "#/$defs/ComplianceInsights"
+    },
+    "quoted_terms": {
+      "items": {
+        "$ref": "#/$defs/QuotedTerm"
+      },
+      "title": "Quoted Terms",
+      "type": "array"
+    },
+    "agent_performance": {
+      "$ref": "#/$defs/AgentPerformance"
+    },
+    "domain_insights": {
+      "additionalProperties": true,
+      "title": "Domain Insights",
+      "type": "object"
+    },
+    "facts": {
+      "items": {
+        "$ref": "#/$defs/FactOut"
+      },
+      "title": "Facts",
+      "type": "array"
+    },
+    "quality": {
+      "$ref": "#/$defs/Quality"
+    }
+  },
+  "required": [
+    "schema_version",
+    "call_id",
+    "source",
+    "processing",
+    "privacy",
+    "call_profile",
+    "sales",
+    "customer",
+    "compliance",
+    "agent_performance",
+    "quality"
+  ],
+  "title": "CallAnalysis",
+  "type": "object"
+}

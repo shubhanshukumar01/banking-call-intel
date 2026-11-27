@@ -1,0 +1,48 @@
+{
+  "file": "call_01001.txt",
+  "scenario": "service_dispute",
+  "products": [
+    "CC_PLATINUM_REWARDS"
+  ],
+  "objections": [],
+  "mentions": [
+    {
+      "surface": "plat rewards card",
+      "product_id": "CC_PLATINUM_REWARDS"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Suresh Reddy"
+    },
+    {
+      "type": "PERSON",
+      "value": "Arjun"
+    },
+    {
+      "type": "PHONE",
+      "value": "9069532873"
+    },
+    {
+      "type": "DOB",
+      "value": "second January nineteen ninety seven"
+    },
+    {
+      "type": "CARD",
+      "value": "4626596939007939"
+    },
+    {
+      "type": "AADHAAR",
+      "value": "409162146916"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "COMPLAINT_REFERENCE": "met"
+  },
+  "identity_verification": "performed",
+  "call_type": "service",
+  "primary_intent": "transaction_dispute",
+  "sales_outcome": "no_pitch"
+}

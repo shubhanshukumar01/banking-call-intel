@@ -1,0 +1,23 @@
+# CI quality gates. `run_eval` exits non-zero if any gate fails.
+# direction: min = metric must be >= value; max = metric must be <= value
+gates:
+  pii_leakage_count:            {max: 0}       # HARD GATE: raw PII in any LLM payload or output
+  pii_masking_recall:           {min: 0.98}
+  product_names_preserved:      {min: 0.98}    # product mentions not destroyed by masking
+  schema_validity_rate:         {min: 1.0}
+  enum_validity_rate:           {min: 1.0}
+  normalization_mention_accuracy: {min: 0.95}
+  product_set_f1:               {min: 0.80}
+  evidence_grounding_rate:      {min: 0.98}    # evidence quotes that match the cited line
+  hallucinated_product_rate:    {max: 0.02}
+  call_type_accuracy:           {min: 0.70}
+  primary_intent_accuracy:      {min: 0.60}
+  sales_outcome_accuracy:       {min: 0.70}
+  compliance_status_accuracy:   {min: 0.70}
+  objection_f1:                 {min: 0.60}
+
+# metrics that, versus the baseline report, may not drop by more than this (absolute)
+regression_tolerance: 0.03
+regression_metrics: [pii_masking_recall, normalization_mention_accuracy, product_set_f1, evidence_grounding_rate,
+                     call_type_accuracy, primary_intent_accuracy, sales_outcome_accuracy, compliance_status_accuracy,
+                     objection_f1]

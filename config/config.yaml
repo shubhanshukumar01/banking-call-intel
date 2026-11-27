@@ -1,0 +1,209 @@
+# =============================================================================
+# CallIntel v3 - Banking Call Transcript Analysis Framework
+# Every value can reference environment variables: ${VAR} or ${VAR:default}.
+# Secrets belong in .env (see .env.example); an inline api_key also works.
+# =============================================================================
+
+app:
+  pipeline_version: "3.0.0"
+  schema_version: "3.0"
+  log_level: INFO
+
+paths:
+  input_dir: data/incoming
+  output_dir: data/output
+  audit_dir: data/audit
+  knowledge_base_dir: knowledge_base
+  products_file: config/products.yaml
+  taxonomy_file: config/taxonomy.yaml
+  prompts_file: config/prompts.yaml
+
+# -----------------------------------------------------------------------------
+# Redis: queue (Streams), LLM/result cache, alias cache, rate limiter, locks,
+# manifest, encrypted PII vault. Redis >= 6.2 required (XAUTOCLAIM).
+# -----------------------------------------------------------------------------
+redis:
+  # 127.0.0.1, not localhost: on Windows 'localhost' tries IPv6 first and costs ~2 s per connection
+  url: ${REDIS_URL:redis://127.0.0.1:6379/0}
+  # Dev only: if the server is unreachable, use in-process fakeredis.
+  # Forces a single worker process (fakeredis is not shared across processes).
+  allow_fakeredis_fallback: false # true = silently use in-process fakeredis when Redis is down (dev only)
+  key_prefix: ci
+  llm_cache_ttl_s: 604800          # 7 days: exact-match cache, content addressed
+  embedding_cache_ttl_s: 2592000   # 30 days
+  stream_maxlen: 200000
+
+workers:
+  processes: 2                     # level-1 parallelism: OS processes
+  files_per_process: 4             # level-2: concurrent files per process (asyncio)
+  max_attempts: 3                  # then -> DLQ
+  visibility_timeout_s: 1800       # pending msg reclaimed after this idle time
+  block_ms: 3000
+  stable_file_age_s: 5             # ignore files modified in the last N seconds
+
+# -----------------------------------------------------------------------------
+# Privacy: raw PII never leaves this process. Only masked text reaches
+# Redis, the LLM gateway, logs and outputs.
+# -----------------------------------------------------------------------------
+privacy:
+  allow_cloud_llm: true            # false = hard local-only mode
+  # Detector chain, in order. Missing optional libs are skipped with a warning.
+  #   regex    : checksummed / structured IDs (card+Luhn, Aadhaar+Verhoeff, PAN, IFSC, UPI, phone, email...)
+  #   context  : cue-phrase recognisers (names after "my name is", OTP/CVV, DOB, address, account no.)
+  #   presidio : Microsoft Presidio NER       (pip install -r requirements-pii.txt)
+  #   gliner   : GLiNER multi-PII NER model   (pip install -r requirements-pii.txt)
+  detectors: [regex, context, presidio, gliner]
+  presidio_model: en_core_web_lg
+  gliner_model: urchade/gliner_multi_pii-v1
+  gliner_threshold: 0.5
+  allow_terms: ["Horizon Bank", "HorizonBank"]   # never masked (your bank's own name, etc.)
+  spoken_digits: true              # "four one one one ..." -> "4111..." before detection
+  egress_guard:
+    enabled: true
+    apply_to: external             # external | all   (trust_zone of the provider)
+    action: block                  # block | redact
+  vault:
+    enabled: false                 # reversible pseudonymisation (encrypted, TTL)
+    key_env: PII_VAULT_KEY         # Fernet key; generate: python -m callintel.cli vault-key
+    ttl_s: 86400
+
+# -----------------------------------------------------------------------------
+# Preprocessing / noise handling
+# -----------------------------------------------------------------------------
+preprocess:
+  speakers:
+    agent: ["agent", "rep", "representative", "csr", "advisor", "adviser", "executive",
+            "associate", "banker", "officer", "rm", "speaker 1", "spk1", "spk 1", "a", "operator"]
+    customer: ["customer", "caller", "client", "cust", "speaker 2", "spk2", "spk 2", "c", "user"]
+    system: ["ivr", "system", "bot", "auto", "recording", "music"]
+  drop_system_turns: true          # IVR lines dropped unless they carry compliance content
+  keep_system_if_matches: ["record", "monitor", "consent", "terms", "privacy"]
+  remove_fillers: true
+  collapse_repeats: true
+  drop_backchannels: true          # mm-hmm / uh-huh only turns; "yes"/"no"/"okay" are KEPT
+  merge_same_speaker: true
+  max_merged_chars: 1200
+  max_repeats: 2                   # repetition compression: a repeated utterance template (hold loops,
+  repeat_min_words: 5              #   statement read-outs) is kept at most 2x; lines < 5 words untouched
+
+chunking:
+  target_tokens: 2400              # local 8k ctx models; raise to 6000+ for cloud models
+  max_tokens: 3000
+  overlap_turns: 2
+
+triage:
+  enabled: true
+  min_score: 2.0                   # chunks below this signal score skip the LLM map step
+  always_keep_first_last: true
+
+agents:
+  max_facts_per_chunk: 15             # output tokens dominate latency; 15 well-chosen facts per ~2.4k-token chunk
+  max_tool_rounds: 1               # bounded agent tool loop (0 disables)
+  critic_enabled: true
+  max_retries: 2                   # targeted re-asks after a failed verification
+  min_confidence: 0.75             # claims below this go to review
+  grounding_min_score: 0.80        # fuzzy quote-vs-line match threshold
+  max_evidence_per_agent: 120      # cap facts handed to one specialist
+
+rag:
+  kb_top_k: 4
+  dense_enabled: auto              # auto = use embeddings if the embedding role is reachable
+  normalizer:
+    t2_accept_score: 0.86          # fuzzy+BM25 accept threshold
+    t2_margin: 0.05
+    t3_llm_enabled: true           # enum-constrained LLM pick among top candidates
+    t3_top_k: 5
+
+output:
+  write_per_call_json: true
+  write_jsonl: true
+  scan_output_for_pii: true
+  include_facts: true             # atomic grounded facts in the JSON (debugging + BI 'facts' table)
+
+audit:
+  capture_llm_payloads: false      # true only for evaluation runs: logs MASKED prompts for leakage tests
+
+# -----------------------------------------------------------------------------
+# LLM gateway. Switch the whole stack with llm.active_profile
+# (or env CALLINTEL_PROFILE=openai). Roles: map, reduce, critic, normalizer, embedding
+# -----------------------------------------------------------------------------
+llm:
+  active_profile: ${CALLINTEL_PROFILE:local}
+
+  providers:
+    ollama:
+      kind: ollama                 # native /api/chat: lets us set num_ctx + JSON-schema format + think=false
+      base_url: ${OLLAMA_BASE_URL:http://127.0.0.1:11434}
+      trust_zone: internal
+      max_concurrency: 1           # = OLLAMA_NUM_PARALLEL (default 1). Higher only queues inside Ollama and
+                                   #   eats the HTTP timeout. Raise both together on a bigger GPU.
+      timeout_s: 900
+    openai:
+      kind: openai
+      api_key: ${OPENAI_API_KEY:}  # or paste the key here (keep this file out of git)
+      base_url: ${OPENAI_BASE_URL:}
+      trust_zone: external         # egress guard applies
+      max_concurrency: 48
+      rpm: 5000
+      tpm: 2000000
+      timeout_s: 180
+    vllm:
+      kind: openai_compatible      # vLLM / LiteLLM proxy / LM Studio
+      api_key: ${VLLM_API_KEY:EMPTY}
+      base_url: ${VLLM_BASE_URL:http://127.0.0.1:8000/v1}
+      trust_zone: internal
+      max_concurrency: 64
+      timeout_s: 300
+    mock:
+      kind: mock                   # deterministic offline stub for CI / plumbing tests only
+      trust_zone: internal
+      max_concurrency: 16
+
+  profiles:
+    # NOTE (Ollama): roles that share a model must share num_ctx - a different context size forces a
+    # full model reload on every role switch. The gateway enforces the max per model as a safeguard.
+    # Laptop profile (RTX 3060 6 GB): ONE model for every role. The 4B instruct model fits fully in
+    # VRAM; two different models cannot both stay loaded in 6 GB, so mixing them makes Ollama swap
+    # models between map and reduce calls. With >= 12 GB VRAM, move reduce/critic to qwen3:8b / 14b.
+    local:
+      map:        {provider: ollama, model: "qwen3:4b-instruct-2507-q4_K_M", num_ctx: 8192, max_tokens: 1200, temperature: 0.0, think: false}
+      reduce:     {provider: ollama, model: "qwen3:4b-instruct-2507-q4_K_M", num_ctx: 8192, max_tokens: 1800, temperature: 0.0, think: false}
+      critic:     {provider: ollama, model: "qwen3:4b-instruct-2507-q4_K_M", num_ctx: 8192, max_tokens: 900, temperature: 0.0, think: false}
+      normalizer: {provider: ollama, model: "qwen3:4b-instruct-2507-q4_K_M", num_ctx: 8192, max_tokens: 60, temperature: 0.0, think: false}
+      embedding:  {provider: ollama, model: "nomic-embed-text"}
+
+    # Already-installed models only (no download needed)
+    local_installed:
+      map:        {provider: ollama, model: "qwen3:8b", num_ctx: 8192, max_tokens: 1200, temperature: 0.0, think: false}
+      reduce:     {provider: ollama, model: "qwen3:8b", num_ctx: 8192, max_tokens: 1800, temperature: 0.0, think: false}
+      critic:     {provider: ollama, model: "qwen3:8b", num_ctx: 8192, max_tokens: 900, temperature: 0.0, think: false}
+      normalizer: {provider: ollama, model: "qwen3:8b", num_ctx: 8192, max_tokens: 60, temperature: 0.0, think: false}
+      embedding:  {provider: ollama, model: "nomic-embed-text"}
+
+    # OpenAI. Verify model ids/prices at https://developers.openai.com/api/docs/models
+    openai:
+      map:        {provider: openai, model: "gpt-6-luna", max_tokens: 2000, reasoning_effort: "none", temperature: null}
+      reduce:     {provider: openai, model: "gpt-6.1-terra", max_tokens: 3000, reasoning_effort: "low", temperature: null}
+      critic:     {provider: openai, model: "gpt-6.1-terra", max_tokens: 1500, reasoning_effort: "low", temperature: null}
+      normalizer: {provider: openai, model: "gpt-6-luna", max_tokens: 100, reasoning_effort: "none", temperature: null}
+      embedding:  {provider: openai, model: "text-embedding-3-small"}
+
+    # On-prem GPU server with vLLM (production scale, data stays in-house)
+    vllm:
+      map:        {provider: vllm, model: "Qwen/Qwen3-30B-A3B-Instruct-2507", max_tokens: 1000, temperature: 0.0}
+      reduce:     {provider: vllm, model: "Qwen/Qwen3-30B-A3B-Instruct-2507", max_tokens: 2000, temperature: 0.0}
+      critic:     {provider: vllm, model: "Qwen/Qwen3-30B-A3B-Instruct-2507", max_tokens: 900, temperature: 0.0}
+      normalizer: {provider: vllm, model: "Qwen/Qwen3-30B-A3B-Instruct-2507", max_tokens: 60, temperature: 0.0}
+      embedding:  {provider: ollama, model: "nomic-embed-text"}
+
+    mock:
+      map:        {provider: mock, model: mock}
+      reduce:     {provider: mock, model: mock}
+      critic:     {provider: mock, model: mock}
+      normalizer: {provider: mock, model: mock}
+      embedding:  {provider: mock, model: mock}
+
+  # USD per 1M tokens, used by the evaluation cost report only. Verify before use.
+  pricing:
+    "gpt-6-luna": {input: 0.10, output: 0.50}
+    "gpt-6.1-terra": {input: 1.00, output: 5.00}

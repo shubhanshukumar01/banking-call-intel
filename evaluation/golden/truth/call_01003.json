@@ -1,0 +1,48 @@
+{
+  "file": "call_01003.txt",
+  "scenario": "complaint_fee",
+  "products": [
+    "SA_SAVINGS_MAX"
+  ],
+  "objections": [],
+  "mentions": [
+    {
+      "surface": "premium savings account",
+      "product_id": "SA_SAVINGS_MAX"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Pooja Nair"
+    },
+    {
+      "type": "PERSON",
+      "value": "Rohan"
+    },
+    {
+      "type": "PHONE",
+      "value": "9466334732"
+    },
+    {
+      "type": "DOB",
+      "value": "ninth March nineteen eighty seven"
+    },
+    {
+      "type": "ACCOUNT",
+      "value": "802650836046"
+    },
+    {
+      "type": "EMAIL",
+      "value": "pooja.nair18@gmail.com"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "COMPLAINT_REFERENCE": "missed"
+  },
+  "identity_verification": "performed",
+  "call_type": "complaint",
+  "primary_intent": "fee_reversal_request",
+  "sales_outcome": "no_pitch"
+}

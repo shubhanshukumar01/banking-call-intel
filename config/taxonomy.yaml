@@ -1,0 +1,89 @@
+# Controlled vocabulary. Every enum in the output JSON comes from here, which keeps
+# values consistent across 1,000s of calls. LLM outputs are *constrained* to these
+# lists at decode time (JSON-schema enums). Use "other" + the free-text detail when
+# nothing fits; the evaluation harness reports "other" rates so you can grow the lists.
+# Changing this file changes the schema -> bump schema_version in config.yaml.
+
+call_types: [sales, service, complaint, collections, enquiry, mixed, other]
+
+intents:
+  - new_product_enquiry
+  - card_application
+  - loan_enquiry
+  - limit_increase
+  - card_block_or_replace
+  - transaction_dispute
+  - fee_reversal_request
+  - account_update
+  - payment_or_emi_issue
+  - statement_or_balance
+  - kyc_or_documents
+  - fraud_report
+  - closure_request
+  - rewards_or_offers
+  - general_service
+  - other
+
+objections:
+  - fees_too_high
+  - interest_rate_too_high
+  - already_has_product
+  - no_need
+  - trust_or_security_concern
+  - needs_time_to_think
+  - eligibility_or_documents
+  - competitor_offer
+  - bad_past_experience
+  - process_too_complex
+  - other
+
+complaints:
+  - unexpected_charges
+  - service_delay
+  - staff_behaviour
+  - digital_channel_issue
+  - fraud_or_unauthorised
+  - card_issue
+  - loan_or_emi_issue
+  - communication_issue
+  - other
+
+risk_flags:
+  - pressure_selling
+  - misleading_claim
+  - guaranteed_returns_claim
+  - unverified_identity_disclosure
+  - sensitive_data_requested       # e.g. agent asks for OTP / full PIN
+  - vulnerable_customer_not_handled
+  - mis_selling_suitability
+  - consent_not_obtained
+  - other
+
+sales_outcomes: [converted, interested_follow_up, declined, no_pitch, unclear]
+resolution_statuses: [resolved, partially_resolved, unresolved, escalated, follow_up_required, unclear]
+sentiments: [very_negative, negative, neutral, positive, very_positive]
+churn_risk: [low, medium, high, unclear]
+product_roles: [owned, enquired, pitched, cross_sell, complained_about, other]
+product_interest: [high, medium, low, none, unclear]
+product_outcomes: [accepted, declined, considering, not_applicable, unclear]
+rule_statuses: [met, missed, not_applicable, unclear]
+yes_no_partial: ["yes", "no", "partially", "unclear"]   # quoted: YAML would read yes/no as booleans
+identity_verification: [performed, not_performed, unclear]
+severity: [low, medium, high]
+
+# Map-step fact types (atomic facts extracted from each chunk)
+fact_types:
+  product_mention: "a bank product named or discussed (label = product role)"
+  intent: "why the customer called (label = intent)"
+  need: "customer need, goal or life event"
+  objection: "customer resistance to an offer (label = objection)"
+  complaint: "customer dissatisfaction (label = complaint)"
+  buying_signal: "customer shows interest / agrees"
+  offer_made: "agent pitches or offers something"
+  outcome: "explicit result: accepted, declined, resolved, escalated"
+  next_step: "agreed follow-up action"
+  quoted_term: "a rate, fee, limit, amount or tenure stated (fill number)"
+  compliance: "disclosure, consent, recording notice, T&C read"
+  risk: "possible mis-selling, pressure, misleading or sensitive-data request (label = risk flag)"
+  sentiment: "clear emotion shift of the customer"
+  identity_check: "agent verifies customer identity"

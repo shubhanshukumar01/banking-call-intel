@@ -1,0 +1,25 @@
+# Local infrastructure. Redis is required for multi-process workers
+# (without it, `python -m callintel run` falls back to in-process fakeredis).
+#   docker compose up -d redis
+services:
+  redis:
+    image: redis:8.2-alpine
+    ports: ["6379:6379"]
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "2gb", "--maxmemory-policy", "volatile-lru"]
+    volumes: ["redis-data:/data"]
+    restart: unless-stopped
+
+  # Optional: run Ollama in a container instead of the desktop app (GPU needs the NVIDIA toolkit)
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   ports: ["11434:11434"]
+  #   environment: ["OLLAMA_NUM_PARALLEL=2", "OLLAMA_KEEP_ALIVE=30m"]
+  #   volumes: ["ollama:/root/.ollama"]
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+
+volumes:
+  redis-data:
+  # ollama:

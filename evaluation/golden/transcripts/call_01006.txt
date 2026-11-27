@@ -1,0 +1,499 @@
+[00:00:02] IVR: Welcome to Horizon Bank. For credit cards press 1, for loans press 2.
+[00:00:03] [hold music]
+[00:00:08] IVR: Your call is important to us. Please hold.
+[00:00:11] Rep: okay so This call is being recorded for quality and training purposes.
+[00:00:12] Rep: um, Thank you for calling Horizon Bank, my name is Vikram, how may I help you today?
+[00:00:15] Caller: Hi Vikram, this is Fatima Khan.
+[00:00:20] Caller: I am in office office now.
+[00:00:21] Rep: Sure, no problem at all.
+[00:00:25] Rep: On the 1th there is a debit of rupees 640 at a fuel station.
+[00:00:26] Caller: yes that is mine
+[00:00:27] Rep: [crosstalk] sorry, please go ahead.
+[00:00:32] Caller: No no, you go ahead.
+[00:00:37] Rep: Please stay on the line, I am still checking.
+[00:00:40] [hold music]
+[00:00:41] [hold music]
+[00:00:43] [hold music]
+[00:00:47] [hold music]
+[00:00:50] Rep: Thank you for holding.
+[00:00:56] Rep: Please stay on the line, I am still checking.
+[00:00:58] [hold music]
+[00:01:02] [hold music]
+[00:01:03] Rep: Thank you for holding.
+[00:01:05] Caller: My son usually handles these things.
+[00:01:09] Rep: so, Please take care.
+[00:01:11] Rep: Please stay on the line, I am still checking.
+[00:01:14] [hold music]
+[00:01:20] [hold music]
+[00:01:21] [hold music]
+[00:01:27] [hold music]
+[00:01:31] [hold music]
+[00:01:32] Rep: Thank you for holding.
+[00:01:35] Rep: Please stay on the line, I am still checking.
+[00:01:37] [hold music]
+[00:01:41] [hold music]
+[00:01:43] [hold music]
+[00:01:44] Rep: Thank you for holding.
+[00:01:47] Rep: Let me pull up the details on my screen.
+[00:01:50] Caller: Sure, take your time.
+[00:01:54] Rep: Please stay on the line, I am still checking.
+[00:02:00] [hold music]
+[00:02:05] [hold music]
+[00:02:10] [hold music]
+[00:02:15] [hold music]
+[00:02:21] [hold music]
+[00:02:22] [hold music]
+[00:02:28] Rep: Thank you for holding.
+[00:02:33] Rep: On the 22th there is a debit of rupees 640 at a restaurant.
+[00:02:37] Caller: mm-hmm
+[00:02:41] Caller: I was calling to check my reward points balance.
+[00:02:44] Rep: Sure, you have 4,200 points. Also, you are pre-approved for an upgrade.
+[00:02:50] Rep: You are eligible for our miles card with special benefits.
+[00:02:52] Rep: okay so The interest rate is three point six percent per month and the annual fee is rupees 2,500.
+[00:02:55] Rep: Please stay on the line, I am still checking.
+[00:03:01] [hold music]
+[00:03:03] [hold music]
+[00:03:09] Rep: Thank you for holding.
+[00:03:15] Rep: [crosstalk] sorry, please go ahead.
+[00:03:16] Caller: No no, you go ahead.
+[00:03:20] Rep: The system is a little slow today, just a moment.
+[00:03:24] Caller: Sure, take your time.
+[00:03:27] Caller: Sorry, the network is a bit weak here.
+[00:03:28] Rep: uh Yes, I can hear you clearly now.
+[00:03:29] Rep: Please stay on the line, I am still checking.
+[00:03:35] [hold music]
+[00:03:39] [hold music]
+[00:03:44] [hold music]
+[00:03:48] Rep: Thank you for holding.
+[00:03:52] Caller: [inaudible] yes I can hear you now
+[00:03:55] Rep: Yes sir, you are audible.
+[00:04:00] Caller: It has been raining a lot here.
+[00:04:02] Rep: Sure, no problem at all.
+[00:04:07] Rep: Please stay on the line, I am still checking.
+[00:04:10] [hold music]
+[00:04:14] [hold music]
+[00:04:18] [hold music]
+[00:04:22] [hold music]
+[00:04:24] [hold music]
+[00:04:26] [hold music]
+[00:04:29] Rep: Thank you for holding.
+[00:04:33] Caller: um, I am in office now.
+[00:04:37] Rep: Sure, no problem at all.
+[00:04:42] Rep: The system is a little slow today, just a moment.
+[00:04:47] Caller: Okay.
+[00:04:53] Caller: But I already have your cash back card, why would I need another one?
+[00:04:59] Rep: uh I understand. The fee is waived if you spend one lakh in a year, and the benefits are worth it.
+[00:05:05] Caller: uh Sorry, the network is a bit weak here.
+[00:05:07] Rep: No problem, I will repeat.
+[00:05:12] Rep: Please stay on the line, I am still checking.
+[00:05:14] [hold music]
+[00:05:18] [hold music]
+[00:05:24] [hold music]
+[00:05:26] [hold music]
+[00:05:31] Rep: Thank you for holding.
+[00:05:35] Rep: Please stay on the line, I am still checking.
+[00:05:40] [hold music]
+[00:05:41] [hold music]
+[00:05:46] Rep: Thank you for holding.
+[00:05:50] Caller: [inaudible] yes I can hear you now
+[00:05:52] Rep: No problem, I will repeat.
+[00:05:58] Rep: The system is a little slow today, just a moment.
+[00:06:00] Caller: mm-hmm
+[00:06:03] Rep: Please stay on the line, I am still checking.
+[00:06:09] [hold music]
+[00:06:14] [hold music]
+[00:06:15] [hold music]
+[00:06:21] Rep: Thank you for holding.
+[00:06:26] Rep: Please stay on the line, I am still checking.
+[00:06:31] [hold music]
+[00:06:37] [hold music]
+[00:06:41] [hold music]
+[00:06:47] [hold music]
+[00:06:51] Rep: Thank you for holding.
+[00:06:57] Rep: Let me pull up the details on my screen.
+[00:07:02] Caller: Sure, take your time.
+[00:07:04] Rep: On the 13th there is a debit debit of rupees 640 at a grocery store.
+[00:07:08] Caller: right
+[00:07:10] Caller: My son usually handles these things.
+[00:07:15] Rep: Please take care.
+[00:07:20] Caller: Can you call me back next week? I will decide by then.
+[00:07:26] Rep: Sure, I will schedule a callback for next Monday.
+[00:07:30] Rep: Let me pull up the details on my screen.
+[00:07:35] Caller: No issues.
+[00:07:36] Rep: [crosstalk] sorry, please go ahead.
+[00:07:41] Caller: No no, you go ahead.
+[00:07:44] Caller: okay so Hello? Am I audible?
+[00:07:45] Rep: No problem, I will repeat.
+[00:07:46] Caller: Sorry, the network is a bit weak here.
+[00:07:52] Rep: uh Yes sir, you are audible.
+[00:07:54] Rep: uh On the 12th there is a debit of rupees 75 at a fuel station.
+[00:07:55] Caller: yes that is mine
+[00:08:00] Caller: I am in office now.
+[00:08:03] Rep: Sure, no problem at all.
+[00:08:05] Caller: so, It has been raining a lot here.
+[00:08:11] Rep: Sure, no problem at at all.
+[00:08:14] Caller: [inaudible] yes I can hear you now
+[00:08:17] Rep: um, Yes, I can hear you clearly now.
+[00:08:21] Caller: I am actually driving right now.
+[00:08:24] Rep: Oh, I understand.
+[00:08:29] Rep: The system is a little slow today, just a moment.
+[00:08:31] Caller: Sure, take your time.
+[00:08:33] Caller: so, I am in office now.
+[00:08:34] Rep: Sure, no problem at all.
+[00:08:35] Rep: On the 23th there is a debit of rupees 18,400 at a fuel station.
+[00:08:38] Caller: right
+[00:08:40] Rep: Please stay on the line, I am still checking.
+[00:08:46] [hold music]
+[00:08:50] [hold music]
+[00:08:51] [hold music]
+[00:08:56] Rep: Thank you for holding.
+[00:09:00] Caller: I am in office now.
+[00:09:04] Rep: Please take care.
+[00:09:08] Caller: Can you repeat that?
+[00:09:11] Rep: Yes sir, you are audible.
+[00:09:17] Caller: Sorry, the network is a bit weak here.
+[00:09:23] Rep: No problem, I will will repeat.
+[00:09:24] Caller: Hello? Am I audible?
+[00:09:28] Rep: Yes sir, you are audible.
+[00:09:30] Rep: Please stay on the line, I am still checking.
+[00:09:32] [hold music]
+[00:09:34] [hold music]
+[00:09:38] [hold music]
+[00:09:42] [hold music]
+[00:09:46] [hold music]
+[00:09:47] Rep: Thank you for holding.
+[00:09:51] Rep: Please stay on the line, I am still checking.
+[00:09:56] [hold music]
+[00:10:02] [hold music]
+[00:10:06] [hold music]
+[00:10:07] [hold music]
+[00:10:13] [hold music]
+[00:10:14] [hold music]
+[00:10:20] Rep: Thank you for holding.
+[00:10:22] Rep: On the 4th there is a debit of rupees 2,999 at an online merchant.
+[00:10:25] Caller: yes that is mine
+[00:10:29] Rep: Please stay on the line, I am still checking.
+[00:10:34] [hold music]
+[00:10:35] [hold music]
+[00:10:36] [hold music]
+[00:10:42] [hold music]
+[00:10:47] [hold music]
+[00:10:49] Rep: Thank you for holding.
+[00:10:51] Caller: I am in office now.
+[00:10:53] Rep: Please take care.
+[00:10:56] Rep: On the 26th there is a debit of rupees 18,400 at a fuel station.
+[00:11:01] Caller: okay
+[00:11:02] Rep: Please stay on the line, I am still checking.
+[00:11:07] [hold music]
+[00:11:11] [hold music]
+[00:11:14] [hold music]
+[00:11:20] Rep: Thank you for holding.
+[00:11:25] Rep: [crosstalk] sorry, please go ahead.
+[00:11:29] Caller: No no, you go ahead.
+[00:11:33] Rep: [crosstalk] sorry, please go ahead.
+[00:11:39] Caller: uh No no, you go ahead.
+[00:11:44] Rep: Let me pull up the details on my screen.
+[00:11:49] Caller: Okay.
+[00:11:51] Rep: Please stay on the line, I am still checking.
+[00:11:53] [hold music]
+[00:11:55] [hold music]
+[00:11:56] Rep: Thank you for holding.
+[00:12:02] Caller: Can you repeat that?
+[00:12:04] Rep: No problem, I will repeat.
+[00:12:10] Rep: Please stay on the line, I am still checking.
+[00:12:13] [hold music]
+[00:12:19] [hold music]
+[00:12:21] [hold music]
+[00:12:27] [hold music]
+[00:12:32] Rep: Thank you for holding.
+[00:12:38] Rep: so, Let me pull up the details on my screen.
+[00:12:39] Caller: Sure, take your time.
+[00:12:45] Rep: [crosstalk] sorry, please go ahead.
+[00:12:46] Caller: No no, you go ahead.
+[00:12:48] Caller: I am actually driving right now.
+[00:12:49] Rep: Oh, I understand.
+[00:12:54] Rep: okay so On the 2th there is a debit of rupees 75 at a restaurant.
+[00:12:55] Caller: mm-hmm
+[00:12:57] Rep: On the 23th there is a debit of rupees 310 at an online merchant.
+[00:12:58] Caller: mm-hmm
+[00:13:00] Caller: Can you repeat that?
+[00:13:01] Rep: Yes sir, you are audible.
+[00:13:03] Rep: On the 1th there is a debit of rupees 310 at a pharmacy.
+[00:13:08] Caller: right
+[00:13:11] Rep: On the 16th there is a debit of rupees 310 at a restaurant.
+[00:13:14] Caller: okay
+[00:13:14] Caller: okay
+[00:13:16] Rep: On the 2th there is a debit of rupees 18,400 at an online merchant.
+[00:13:21] Caller: okay so right
+[00:13:24] Rep: I am just updating the notes on your profile.
+[00:13:28] Caller: mm-hmm
+[00:13:30] Rep: Please stay on the line, I am still checking.
+[00:13:35] [hold music]
+[00:13:38] [hold music]
+[00:13:42] Rep: Thank you for holding.
+[00:13:45] Rep: [crosstalk] sorry, please go ahead.
+[00:13:46] Caller: No no, you go ahead.
+[00:13:52] Rep: On the 21th there is a debit of rupees 1,250 at a pharmacy.
+[00:13:54] Caller: uh-huh
+[00:14:00] Rep: On the 2th there is a debit of rupees 75 at a pharmacy.
+[00:14:01] Caller: right
+[00:14:04] Rep: Please stay on the line, I am still checking.
+[00:14:06] [hold music]
+[00:14:12] [hold music]
+[00:14:14] Rep: Thank you for holding.
+[00:14:20] Rep: um, On the 6th there is a debit of rupees 75 at an online merchant.
+[00:14:24] Caller: okay
+[00:14:27] Rep: Let me pull up the details on my screen.
+[00:14:33] Caller: mm-hmm
+[00:14:39] Rep: Let me pull up the details on my screen.
+[00:14:40] Caller: Okay.
+[00:14:43] Caller: It has been raining a lot here.
+[00:14:47] Rep: Please take care.
+[00:14:51] Rep: I am just updating the notes on your profile.
+[00:14:56] Caller: No issues.
+[00:15:02] Caller: uh I am in office now.
+[00:15:03] Rep: Please take care.
+[00:15:09] Rep: Let me pull up the details on my screen.
+[00:15:15] Caller: um, mm-hmm
+[00:15:16] Rep: [crosstalk] sorry, please go ahead.
+[00:15:17] Caller: No no, you go ahead.
+[00:15:22] Caller: I am in office now.
+[00:15:28] Rep: okay so Oh, I understand.
+[00:15:30] Rep: Please stay on the line, I am still checking.
+[00:15:31] [hold music]
+[00:15:36] [hold music]
+[00:15:38] [hold music]
+[00:15:42] [hold music]
+[00:15:46] [hold music]
+[00:15:47] Rep: Thank you for holding.
+[00:15:52] Rep: On the 4th there is a debit of rupees 18,400 at a fuel station.
+[00:15:57] Caller: right
+[00:15:59] Rep: Please stay on the line, I am still checking.
+[00:16:04] [hold music]
+[00:16:06] [hold music]
+[00:16:10] [hold music]
+[00:16:15] [hold music]
+[00:16:21] [hold music]
+[00:16:25] [hold music]
+[00:16:27] Rep: Thank you for holding.
+[00:16:33] Rep: On the 17th there is a debit of rupees 640 at a pharmacy.
+[00:16:36] Caller: so, okay
+[00:16:40] Rep: On the 7th there is a debit of rupees 310 at a fuel station.
+[00:16:42] Caller: okay
+[00:16:43] Caller: Sorry, the network is a bit weak here.
+[00:16:48] Rep: No problem, I will repeat.
+[00:16:50] Rep: On the 5th there is a debit of rupees 75 at a grocery store.
+[00:16:53] Caller: uh-huh
+[00:16:54] Rep: Please stay on the line, I am still checking.
+[00:16:55] [hold music]
+[00:17:00] [hold music]
+[00:17:04] [hold music]
+[00:17:10] [hold music]
+[00:17:13] [hold music]
+[00:17:17] Rep: Thank you for holding.
+[00:17:18] Rep: Please stay on the line, I am still checking.
+[00:17:23] [hold music]
+[00:17:29] [hold music]
+[00:17:33] [hold music]
+[00:17:36] [hold music]
+[00:17:38] [hold music]
+[00:17:44] [hold music]
+[00:17:50] Rep: Thank you for holding.
+[00:17:56] Rep: On the 27th there is a debit of rupees 18,400 at a pharmacy.
+[00:18:01] Caller: okay so okay
+[00:18:05] Rep: On the 5th there is a debit of rupees 640 at a pharmacy.
+[00:18:11] Caller: mm-hmm
+[00:18:15] Caller: [inaudible] yes I can hear you now
+[00:18:20] Rep: Yes sir, you are audible.
+[00:18:22] Rep: uh [crosstalk] sorry, please go ahead.
+[00:18:27] Caller: No no, you go ahead.
+[00:18:28] Caller: It has been raining a lot here.
+[00:18:32] Rep: so, Please take care.
+[00:18:33] Rep: Please stay on the line, I am still checking.
+[00:18:34] [hold music]
+[00:18:40] [hold music]
+[00:18:41] [hold music]
+[00:18:45] [hold music]
+[00:18:49] [hold music]
+[00:18:52] [hold music]
+[00:18:58] Rep: Thank you for holding.
+[00:18:59] Rep: Please stay on the line, I am still checking.
+[00:19:03] [hold music]
+[00:19:06] [hold music]
+[00:19:08] [hold music]
+[00:19:13] [hold music]
+[00:19:15] Rep: Thank you for holding.
+[00:19:16] Rep: On the 18th there is a debit of rupees 2,999 at a grocery store.
+[00:19:17] Caller: yes that is mine
+[00:19:22] Rep: On the 20th there is a debit of rupees 75 at a pharmacy.
+[00:19:28] Caller: uh-huh
+[00:19:31] Caller: I am in office now.
+[00:19:33] Rep: Please take care.
+[00:19:38] Caller: Sorry, the network is a bit weak here.
+[00:19:39] Rep: No problem, I will repeat.
+[00:19:45] Caller: Hello? Am I audible?
+[00:19:46] Rep: No problem, I will repeat.
+[00:19:47] Rep: Please stay on the line, I am still checking.
+[00:19:48] [hold music]
+[00:19:50] [hold music]
+[00:19:56] [hold music]
+[00:19:58] [hold music]
+[00:20:01] Rep: Thank you for holding.
+[00:20:06] Rep: Let me pull up the details on my screen.
+[00:20:11] Caller: Sure, take your time.
+[00:20:13] Caller: I am actually driving right now.
+[00:20:17] Rep: Sure, no problem at all.
+[00:20:19] Caller: um, My son usually handles these things.
+[00:20:20] Rep: Please take care.
+[00:20:23] Caller: I am actually driving right now.
+[00:20:29] Rep: Please take care.
+[00:20:35] Rep: On the 28th there is a debit of rupees 2,999 at an online merchant.
+[00:20:39] Caller: mm-hmm
+[00:20:40] Rep: [crosstalk] sorry, please go ahead.
+[00:20:46] Caller: No no, you go ahead.
+[00:20:47] Rep: Please stay on the line, I am still checking.
+[00:20:53] [hold music]
+[00:20:55] [hold music]
+[00:20:56] Rep: Thank you for holding.
+[00:21:00] Caller: My son usually handles these things.
+[00:21:05] Rep: Please take care.
+[00:21:08] Rep: On the 13th there is a debit of rupees 2,999 at an online merchant.
+[00:21:14] Caller: yes that is mine
+[00:21:18] Rep: On the 19th there is a debit of rupees 2,999 at a grocery store.
+[00:21:20] Caller: right
+[00:21:24] Rep: Let me pull up the details on my screen.
+[00:21:25] Caller: Sure, take your time.
+[00:21:31] Caller: Can you repeat that?
+[00:21:37] Rep: No problem, I will repeat.
+[00:21:39] Caller: Hello? Am I audible?
+[00:21:43] Rep: okay so No No problem, I will repeat.
+[00:21:47] Rep: [crosstalk] sorry, please go ahead.
+[00:21:51] Caller: No no, you go ahead.
+[00:21:56] Rep: On the 15th there is a debit of rupees 18,400 at a restaurant.
+[00:22:01] Caller: mm-hmm
+[00:22:05] Caller: [inaudible] yes I can hear you now
+[00:22:10] Rep: Yes, I can hear you clearly now.
+[00:22:16] Rep: Please stay on the line, I am still checking.
+[00:22:21] [hold music]
+[00:22:26] [hold music]
+[00:22:32] [hold music]
+[00:22:33] Rep: Thank you for holding.
+[00:22:36] Rep: I am just updating the notes on your profile.
+[00:22:42] Caller: okay so Okay.
+[00:22:47] Caller: Hello? Am I audible?
+[00:22:51] Rep: Yes, I can hear you clearly now.
+[00:22:53] Rep: On the 13th there is a debit of rupees 640 at an online merchant.
+[00:22:58] Caller: right
+[00:23:02] Rep: uh Let me pull up the details on my screen.
+[00:23:06] Caller: uh No issues.
+[00:23:12] Rep: Please stay on the line, I am still checking.
+[00:23:13] [hold music]
+[00:23:16] [hold music]
+[00:23:19] [hold music]
+[00:23:25] Rep: Thank you for holding.
+[00:23:26] Rep: Let me pull up the details on my screen.
+[00:23:30] Caller: mm-hmm
+[00:23:34] Caller: I am actually driving right now.
+[00:23:40] Rep: Please take care.
+[00:23:45] Rep: On the 27th there is a debit of rupees 75 at a pharmacy.
+[00:23:50] Caller: okay
+[00:23:52] Rep: Please stay on the line, I am still checking.
+[00:23:54] [hold music]
+[00:23:58] [hold music]
+[00:24:03] [hold music]
+[00:24:09] [hold music]
+[00:24:12] [hold music]
+[00:24:16] [hold music]
+[00:24:21] Rep: Thank you for holding.
+[00:24:24] Rep: Please stay on the line, I am still checking.
+[00:24:25] [hold music]
+[00:24:29] [hold music]
+[00:24:31] [hold music]
+[00:24:35] [hold music]
+[00:24:36] [hold music]
+[00:24:42] [hold music]
+[00:24:48] Rep: Thank you for holding.
+[00:24:54] Rep: On the 4th there is a debit of rupees 640 at a utility biller.
+[00:24:58] Caller: mm-hmm
+[00:25:03] Rep: Please stay on the line, I am still checking.
+[00:25:08] [hold music]
+[00:25:13] [hold music]
+[00:25:16] [hold music]
+[00:25:21] [hold music]
+[00:25:23] [hold music]
+[00:25:28] Rep: Thank you for holding.
+[00:25:34] Rep: On the 3th there is a debit of rupees 75 at a grocery store.
+[00:25:40] Caller: okay
+[00:25:40] Caller: okay
+[00:25:42] Rep: I am just updating the notes notes on your profile.
+[00:25:43] Caller: um, Sure, take your time.
+[00:25:46] Rep: I am just updating the notes on your profile.
+[00:25:50] Caller: mm-hmm
+[00:25:53] Rep: Please stay on the line, I am still checking.
+[00:25:59] [hold music]
+[00:26:05] [hold music]
+[00:26:09] [hold music]
+[00:26:11] [hold music]
+[00:26:14] Rep: Thank you for holding.
+[00:26:15] Rep: Please stay on the line, I am still checking.
+[00:26:21] [hold music]
+[00:26:26] [hold music]
+[00:26:27] [hold music]
+[00:26:30] [hold music]
+[00:26:35] [hold music]
+[00:26:39] Rep: Thank you for holding.
+[00:26:43] Caller: [inaudible] yes I can hear you now
+[00:26:48] Rep: Yes, I can hear you clearly now.
+[00:26:53] Rep: [crosstalk] sorry, please go ahead.
+[00:26:54] Caller: No no, you go ahead.
+[00:26:59] Rep: Please stay on the line, I am still checking.
+[00:27:01] [hold music]
+[00:27:06] [hold music]
+[00:27:07] [hold music]
+[00:27:11] [hold music]
+[00:27:15] [hold music]
+[00:27:17] Rep: Thank you for holding.
+[00:27:18] Caller: Sorry, the network is a bit weak here.
+[00:27:19] Rep: Yes, I can hear you clearly now.
+[00:27:24] Rep: [crosstalk] sorry, please go ahead.
+[00:27:29] Caller: No no, you go ahead.
+[00:27:31] Rep: Please stay on the line, I am still checking.
+[00:27:33] [hold music]
+[00:27:39] [hold music]
+[00:27:45] [hold music]
+[00:27:47] [hold music]
+[00:27:49] [hold music]
+[00:27:55] [hold music]
+[00:27:56] Rep: Thank you for holding.
+[00:28:00] Rep: I am just updating the notes on your profile.
+[00:28:06] Caller: Okay.
+[00:28:10] Rep: Let me pull up the details on my screen.
+[00:28:13] Caller: um, Sure, take your time.
+[00:28:13] Caller: um, Sure, take your time.
+[00:28:16] Rep: On the 13th there is a debit of rupees 18,400 at a fuel station.
+[00:28:21] Caller: mm-hmm
+[00:28:23] Rep: On the 8th there is a debit of rupees 2,999 at a utility biller.
+[00:28:26] Caller: so, okay
+[00:28:28] Rep: On the 28th there is a debit of rupees 18,400 at a pharmacy.
+[00:28:30] Caller: right
+[00:28:36] Caller: Hello? Am I audible?
+[00:28:36] Caller: Hello? Am I audible?
+[00:28:39] Rep: Yes, I can hear you clearly now.
+[00:28:44] Rep: Please stay on the line, I am still checking.
+[00:28:46] [hold music]
+[00:28:52] [hold music]
+[00:28:55] [hold music]
+[00:28:58] Rep: Thank you for holding.
+[00:29:02] Rep: Please stay on the line, I am still checking.
+[00:29:07] [hold music]
+[00:29:10] [hold music]
+[00:29:11] [hold music]
+[00:29:14] [hold music]
+[00:29:20] Rep: Thank you for holding.
+[00:29:25] Rep: On the 9th there is a debit of rupees 2,999 at a pharmacy.
+[00:29:29] Caller: okay
+[00:29:31] Rep: [crosstalk] sorry, please go ahead.
+[00:29:37] Caller: No no, you go ahead.
+[00:29:38] Rep: Is there anything else I can help you with today?
+[00:29:44] Caller: so, No, that's all. Thank you.
+[00:29:46] Rep: Thank you for calling Horizon Bank, have a great day Fatima.

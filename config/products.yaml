@@ -1,0 +1,103 @@
+# Canonical product registry: the single source of truth for product normalisation.
+# - aliases: how customers/agents actually say it (ASR errors and slang included)
+# - attributes: reference terms used by the compliance agent to catch misquoted rates/fees
+# Learned aliases (from tier-2/3 normalisation) are cached in Redis and can be
+# promoted here after review:  python -m callintel.cli aliases --export
+# Replace this sample catalogue with the client's real catalogue.
+
+products:
+  - id: CC_PLATINUM_REWARDS
+    name: Platinum Rewards Credit Card
+    category: credit_card
+    aliases: ["platinum rewards card", "platinum card", "plat card", "platinum credit card",
+              "platinum rewards", "rewards platinum", "plat rewards", "platinum one"]
+    attributes: {annual_fee: "Rs 2,500", joining_fee: "Rs 2,500", apr_monthly: "3.6%", reward_rate: "4 points per Rs 150"}
+    description: Premium rewards credit card with lounge access and accelerated reward points.
+
+  - id: CC_CASHBACK
+    name: Cashback Credit Card
+    category: credit_card
+    aliases: ["cashback card", "cash back card", "cashback credit card", "the cashback one",
+              "cash back credit card", "5 percent cashback card", "cashbak card"]
+    attributes: {annual_fee: "Rs 499", apr_monthly: "3.75%", cashback: "5% online, 1% others"}
+    description: Entry-level card with flat cashback on online and offline spends.
+
+  - id: CC_MILES_TRAVEL
+    name: Miles Travel Credit Card
+    category: credit_card
+    aliases: ["miles card", "travel card", "miles travel card", "air miles card", "travel credit card"]
+    attributes: {annual_fee: "Rs 3,000", forex_markup: "2%"}
+    description: Travel card earning air miles with low forex markup.
+
+  - id: PL_PERSONAL_LOAN
+    name: Personal Loan
+    category: loan
+    aliases: ["personal loan", "pl", "instant loan", "pre approved loan", "preapproved loan",
+              "pre-approved personal loan", "quick loan", "insta loan"]
+    attributes: {interest_rate: "10.99% p.a. onwards", processing_fee: "up to 2%", max_tenure: "60 months"}
+    description: Unsecured personal loan with instant disbursal for pre-approved customers.
+
+  - id: HL_HOME_LOAN
+    name: Home Loan
+    category: loan
+    aliases: ["home loan", "housing loan", "mortgage", "house loan", "home finance"]
+    attributes: {interest_rate: "8.5% p.a. onwards", max_tenure: "30 years"}
+    description: Loan for purchase or construction of residential property.
+
+  - id: AL_AUTO_LOAN
+    name: Car Loan
+    category: loan
+    aliases: ["car loan", "auto loan", "vehicle loan", "four wheeler loan"]
+    attributes: {interest_rate: "9.25% p.a. onwards"}
+    description: Loan for new and used cars.
+
+  - id: SA_SAVINGS_MAX
+    name: Savings Max Account
+    category: deposit
+    aliases: ["savings max", "savings max account", "max savings account", "savings account max",
+              "premium savings account", "savings plus"]
+    attributes: {min_balance: "Rs 25,000", interest_rate: "3.5% p.a."}
+    description: Premium savings account with higher transaction limits.
+
+  - id: FD_FIXED_DEPOSIT
+    name: Fixed Deposit
+    category: deposit
+    aliases: ["fixed deposit", "fd", "term deposit", "f d", "tax saver fd"]
+    attributes: {interest_rate: "7.1% p.a. for 1 year"}
+    description: Fixed-tenure deposit with guaranteed interest.
+
+  - id: INS_TERM_LIFE
+    name: Term Life Insurance
+    category: insurance
+    aliases: ["term insurance", "term plan", "life insurance", "term life", "life cover"]
+    attributes: {}
+    description: Third-party term life insurance distributed by the bank.
+
+  - id: INV_MUTUAL_FUND_SIP
+    name: Mutual Fund SIP
+    category: investment
+    aliases: ["sip", "mutual fund", "mutual funds", "systematic investment plan", "mf sip"]
+    attributes: {}
+    description: Mutual fund investments via systematic investment plans (market-linked, no guaranteed returns).
+
+  - id: DC_DEBIT_CARD
+    name: Debit Card
+    category: debit_card
+    aliases: ["debit card", "atm card", "atm debit card", "visa debit card"]
+    attributes: {annual_fee: "Rs 199"}
+    description: Debit card linked to savings/current account.
+
+  # Generic fall-backs keep vague mentions consistent instead of dropping them.
+  - id: GEN_CREDIT_CARD
+    name: Credit Card (unspecified)
+    category: credit_card
+    generic: true
+    aliases: ["credit card", "cc", "card", "new card", "another card"]
+    description: Unspecified credit card.
+
+  - id: GEN_LOAN
+    name: Loan (unspecified)
+    category: loan
+    generic: true
+    aliases: ["loan", "a loan", "some loan"]
+    description: Unspecified loan product.

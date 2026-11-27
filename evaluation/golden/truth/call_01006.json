@@ -1,0 +1,39 @@
+{
+  "file": "call_01006.txt",
+  "scenario": "sales_card",
+  "products": [
+    "CC_MILES_TRAVEL",
+    "CC_CASHBACK"
+  ],
+  "objections": [
+    "already_has_product"
+  ],
+  "mentions": [
+    {
+      "surface": "miles card",
+      "product_id": "CC_MILES_TRAVEL"
+    },
+    {
+      "surface": "cash back card",
+      "product_id": "CC_CASHBACK"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Fatima Khan"
+    },
+    {
+      "type": "PERSON",
+      "value": "Vikram"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "APR_FEE_DISCLOSURE": "met"
+  },
+  "identity_verification": "not_performed",
+  "call_type": "sales",
+  "primary_intent": "rewards_or_offers",
+  "sales_outcome": "interested_follow_up"
+}

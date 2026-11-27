@@ -1,0 +1,3 @@
+# Optional: third-party LLM-judge frameworks (the built-in harness works without them)
+ragas>=0.2
+deepeval>=1.0

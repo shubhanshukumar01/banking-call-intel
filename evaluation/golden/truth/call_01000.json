@@ -1,0 +1,55 @@
+{
+  "file": "call_01000.txt",
+  "scenario": "mixed_block_cross",
+  "products": [
+    "DC_DEBIT_CARD",
+    "CC_CASHBACK"
+  ],
+  "objections": [
+    "needs_time_to_think"
+  ],
+  "mentions": [
+    {
+      "surface": "debit card",
+      "product_id": "DC_DEBIT_CARD"
+    },
+    {
+      "surface": "cashback card",
+      "product_id": "CC_CASHBACK"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Kavita Rao"
+    },
+    {
+      "type": "PERSON",
+      "value": "Ananya"
+    },
+    {
+      "type": "PHONE",
+      "value": "7813465335"
+    },
+    {
+      "type": "DOB",
+      "value": "twenty eighth February nineteen ninety seven"
+    },
+    {
+      "type": "ADDRESS",
+      "value": "60 Park Street, Chennai"
+    },
+    {
+      "type": "EMAIL",
+      "value": "kavita.rao80@gmail.com"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "APR_FEE_DISCLOSURE": "missed"
+  },
+  "identity_verification": "performed",
+  "call_type": "mixed",
+  "primary_intent": "card_block_or_replace",
+  "sales_outcome": "declined"
+}

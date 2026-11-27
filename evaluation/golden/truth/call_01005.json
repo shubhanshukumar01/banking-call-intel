@@ -1,0 +1,54 @@
+{
+  "file": "call_01005.txt",
+  "scenario": "investment_sip",
+  "products": [
+    "INV_MUTUAL_FUND_SIP"
+  ],
+  "objections": [
+    "fees_too_high"
+  ],
+  "mentions": [
+    {
+      "surface": "SIP",
+      "product_id": "INV_MUTUAL_FUND_SIP"
+    },
+    {
+      "surface": "SIP",
+      "product_id": "INV_MUTUAL_FUND_SIP"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Lakshmi Menon"
+    },
+    {
+      "type": "PERSON",
+      "value": "Ananya"
+    },
+    {
+      "type": "PHONE",
+      "value": "8584910596"
+    },
+    {
+      "type": "DOB",
+      "value": "twelfth October nineteen eighty eight"
+    },
+    {
+      "type": "EMAIL",
+      "value": "lakshmi.menon37@gmail.com"
+    },
+    {
+      "type": "AADHAAR",
+      "value": "257143141733"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "missed",
+    "NO_GUARANTEED_RETURNS": "met"
+  },
+  "identity_verification": "performed",
+  "call_type": "sales",
+  "primary_intent": "new_product_enquiry",
+  "sales_outcome": "declined"
+}

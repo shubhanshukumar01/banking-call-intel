@@ -1,0 +1,69 @@
+# Compliance rules checked by the Compliance agent (RAG collection "compliance").
+# applies_to_call_types / applies_to_categories decide which rules are retrieved for a call.
+# search_phrases are used to retrieve candidate transcript lines (transcript RAG) so the
+# agent judges against the actual words spoken. Replace with the client's real rulebook.
+
+rules:
+  - id: REC_DISCLOSURE
+    title: Call recording disclosure
+    description: At the start of the call the customer must be told the call is recorded or monitored.
+    applies_to_call_types: [all]
+    applies_to_categories: [all]
+    search_phrases: ["call is being recorded", "recorded for quality", "call may be recorded", "monitored for training"]
+    severity_if_missed: medium
+
+  - id: ID_VERIFICATION
+    title: Identity verification before account disclosure
+    description: Agent must verify identity (e.g. date of birth, registered mobile, security question) before sharing or changing account details.
+    applies_to_call_types: [service, complaint, collections, mixed]
+    applies_to_categories: [all]
+    search_phrases: ["verify your identity", "date of birth", "registered mobile number", "security question", "confirm your details"]
+    severity_if_missed: high
+
+  - id: APR_FEE_DISCLOSURE
+    title: Interest rate and fee disclosure when pitching credit
+    description: When a credit card or loan is pitched, the agent must state the applicable interest rate / APR and key fees (joining, annual, processing).
+    applies_to_call_types: [sales, mixed]
+    applies_to_categories: [credit_card, loan]
+    search_phrases: ["interest rate", "annual fee", "joining fee", "processing fee", "per month", "per annum", "apr"]
+    severity_if_missed: high
+
+  - id: TNC_CONSENT
+    title: Explicit consent before processing an application
+    description: Before submitting any application the agent must obtain the customer's explicit consent and mention that terms and conditions apply.
+    applies_to_call_types: [sales, mixed]
+    applies_to_categories: [all]
+    search_phrases: ["do you agree", "your consent", "terms and conditions", "shall I go ahead", "can I proceed"]
+    severity_if_missed: high
+
+  - id: NO_OTP_REQUEST
+    title: Never ask for OTP, PIN or CVV
+    description: Agents must never ask the customer to share an OTP, card PIN, CVV or net-banking password.
+    applies_to_call_types: [all]
+    applies_to_categories: [all]
+    search_phrases: ["tell me the otp", "share the otp", "your pin", "cvv", "password"]
+    severity_if_missed: high
+
+  - id: NO_GUARANTEED_RETURNS
+    title: No guaranteed-return claims on market-linked products
+    description: Market-linked products (mutual funds, SIPs, ULIPs) must not be described as guaranteed or risk-free; risk disclosure must be stated.
+    applies_to_call_types: [sales, mixed]
+    applies_to_categories: [investment]
+    search_phrases: ["guaranteed returns", "no risk", "risk free", "market risks", "subject to market"]
+    severity_if_missed: high
+
+  - id: COOLING_OFF
+    title: Cooling-off / free-look period disclosure for loans and insurance
+    description: For loans and insurance the agent should mention the cooling-off or free-look period when the customer agrees to proceed.
+    applies_to_call_types: [sales, mixed]
+    applies_to_categories: [loan, insurance]
+    search_phrases: ["cooling off", "free look", "cancel within", "look-up period"]
+    severity_if_missed: medium
+
+  - id: COMPLAINT_REFERENCE
+    title: Complaint reference number provided
+    description: When a complaint is registered the customer must be given a complaint / reference number and expected resolution timeline.
+    applies_to_call_types: [complaint, service, mixed]
+    applies_to_categories: [all]
+    search_phrases: ["complaint number", "reference number", "ticket number", "resolved within", "working days"]
+    severity_if_missed: medium

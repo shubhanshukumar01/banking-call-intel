@@ -1,0 +1,48 @@
+{
+  "file": "call_01002.txt",
+  "scenario": "sales_loan",
+  "products": [
+    "PL_PERSONAL_LOAN"
+  ],
+  "objections": [],
+  "mentions": [
+    {
+      "surface": "personal loan",
+      "product_id": "PL_PERSONAL_LOAN"
+    },
+    {
+      "surface": "instant loan",
+      "product_id": "PL_PERSONAL_LOAN"
+    }
+  ],
+  "pii": [
+    {
+      "type": "PERSON",
+      "value": "Sanjay Gupta"
+    },
+    {
+      "type": "PERSON",
+      "value": "Neha"
+    },
+    {
+      "type": "PHONE",
+      "value": "9718820116"
+    },
+    {
+      "type": "DOB",
+      "value": "twenty eighth January nineteen ninety five"
+    },
+    {
+      "type": "AADHAAR",
+      "value": "492474189791"
+    }
+  ],
+  "compliance": {
+    "REC_DISCLOSURE": "met",
+    "APR_FEE_DISCLOSURE": "missed"
+  },
+  "identity_verification": "performed",
+  "call_type": "sales",
+  "primary_intent": "loan_enquiry",
+  "sales_outcome": "interested_follow_up"
+}

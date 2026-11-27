@@ -1,0 +1,501 @@
+[00:00:22] IVR: Welcome to Horizon Bank. For credit cards press 1, for loans press 2.
+[00:00:25] [hold music]
+[00:00:26] IVR: Your call is important to us. Please hold.
+[00:00:29] Agent: This call is being recorded for quality and training purposes.
+[00:00:34] Agent: Thank you for calling Horizon Bank, my name is Neha, how may I help you today?
+[00:00:36] Customer: so, Hi Neha, this is Amit Verma.
+[00:00:37] Agent: Before we proceed, for verification can you please confirm your date of birth?
+[00:00:40] Customer: It is twenty eighth August nineteen seventy three.
+[00:00:43] Agent: And your registered mobile number please?
+[00:00:44] Customer: eight six four zero six four six two three zero
+[00:00:47] Agent: Thank you Mr. Verma, your identity is verified.
+[00:00:49] Customer: um, Can you repeat that?
+[00:00:53] Agent: Yes sir, you are audible.
+[00:00:55] Agent: On the 13th there is a debit of rupees 18,400 at a fuel station.
+[00:00:57] Customer: um, uh-huh
+[00:01:02] Customer: Sorry, the network is a bit weak here.
+[00:01:06] Agent: Yes, I can hear you clearly now.
+[00:01:08] Customer: Hello? Am I audible?
+[00:01:14] Agent: No problem, problem, I will repeat.
+[00:01:16] Agent: Please stay on the line, I am still checking.
+[00:01:22] [hold music]
+[00:01:26] [hold music]
+[00:01:27] [hold music]
+[00:01:28] [hold music]
+[00:01:30] Agent: Thank you for holding.
+[00:01:33] Customer: Hello? Am I audible?
+[00:01:36] Agent: Yes, I can hear you clearly now.
+[00:01:37] Agent: Please stay on the line, I am still checking.
+[00:01:41] [hold music]
+[00:01:44] [hold music]
+[00:01:45] [hold music]
+[00:01:48] Agent: Thank you for holding.
+[00:01:51] Customer: Hello? Am I audible?
+[00:01:55] Agent: uh Yes, I can hear you clearly now.
+[00:02:00] Agent: The system is a little slow today, just a moment.
+[00:02:01] Customer: so, mm-hmm
+[00:02:02] Agent: Please stay on the line, I am still checking.
+[00:02:06] [hold music]
+[00:02:10] [hold music]
+[00:02:13] [hold music]
+[00:02:15] [hold music]
+[00:02:19] [hold music]
+[00:02:22] [hold music]
+[00:02:27] Agent: Thank you for holding.
+[00:02:30] Agent: [crosstalk] sorry, please go ahead.
+[00:02:34] Customer: No no, no, you go ahead.
+[00:02:38] Customer: I am in office now.
+[00:02:42] Agent: Sure, no problem problem at all.
+[00:02:48] Agent: [crosstalk] sorry, please go ahead.
+[00:02:54] Customer: No no, you go ahead.
+[00:02:58] Agent: Please stay on the line, I am still checking.
+[00:02:59] [hold music]
+[00:03:02] [hold music]
+[00:03:04] Agent: Thank you for holding.
+[00:03:10] Customer: I got an SMS about a personal lone, I wanted to know more about it.
+[00:03:16] Agent: uh You are eligible for our personal loan with special benefits.
+[00:03:20] Agent: The interest rate starts at 10.99% per annum with a processing fee of up to 2%.
+[00:03:25] Customer: I am in office now.
+[00:03:29] Agent: Oh, I understand.
+[00:03:30] Agent: Let me pull up the details on my screen.
+[00:03:36] Customer: No issues.
+[00:03:42] Agent: [crosstalk] sorry, please go ahead.
+[00:03:45] Customer: No no, you go ahead.
+[00:03:51] Customer: I am in office now.
+[00:03:53] Agent: Sure, no problem at all.
+[00:03:57] Agent: Let me pull up the details on my screen.
+[00:04:03] Customer: No issues.
+[00:04:06] Agent: Please stay on the line, I am still checking.
+[00:04:10] [hold music]
+[00:04:11] [hold music]
+[00:04:17] [hold music]
+[00:04:20] [hold music]
+[00:04:25] [hold music]
+[00:04:31] Agent: Thank you for holding.
+[00:04:35] Agent: Please stay on the line, I am still checking.
+[00:04:39] [hold music]
+[00:04:40] [hold music]
+[00:04:43] [hold music]
+[00:04:49] [hold music]
+[00:04:54] [hold music]
+[00:04:58] [hold music]
+[00:05:03] Agent: Thank you for holding.
+[00:05:09] Agent: Let me pull up the details on my screen.
+[00:05:10] Customer: Okay.
+[00:05:12] Agent: [crosstalk] sorry, please go ahead.
+[00:05:17] Customer: um, No no, you you go ahead.
+[00:05:21] Agent: On the 5th there is a debit of rupees 1,250 at a fuel station.
+[00:05:26] Customer: right
+[00:05:29] Agent: Please stay on the line, I am still checking.
+[00:05:32] [hold music]
+[00:05:35] [hold music]
+[00:05:40] [hold music]
+[00:05:43] Agent: Thank you for holding.
+[00:05:46] Agent: Please stay on the line, I am still checking.
+[00:05:49] [hold music]
+[00:05:55] [hold music]
+[00:05:56] [hold music]
+[00:06:02] Agent: Thank you for holding.
+[00:06:06] Customer: But I already have your the cashback one, why would I need another one?
+[00:06:09] Agent: I understand. The fee is waived if you spend one lakh in a year, and the benefits are worth it.
+[00:06:15] Agent: The system is a little slow today, just a moment.
+[00:06:21] Customer: Sure, take your time.
+[00:06:26] Agent: On the 17th there is a debit of rupees 2,999 at a fuel station.
+[00:06:31] Customer: so, uh-huh
+[00:06:35] Agent: [crosstalk] sorry, please go ahead.
+[00:06:36] Customer: No no, you go ahead.
+[00:06:42] Customer: It has been raining a lot here.
+[00:06:45] Agent: uh Please take care.
+[00:06:49] Agent: On the 26th there is a debit of rupees 310 at a grocery store.
+[00:06:54] Customer: yes that is mine
+[00:07:00] Agent: Please stay on the line, I am still checking.
+[00:07:04] [hold music]
+[00:07:05] [hold music]
+[00:07:09] [hold music]
+[00:07:14] [hold music]
+[00:07:15] [hold music]
+[00:07:16] Agent: Thank you for holding.
+[00:07:21] Customer: [inaudible] yes I can hear you now
+[00:07:27] Agent: Yes sir, you are audible.
+[00:07:32] Agent: Please stay on the line, I am still checking.
+[00:07:33] [hold music]
+[00:07:34] [hold music]
+[00:07:37] Agent: Thank you for holding.
+[00:07:39] Customer: Can you repeat that?
+[00:07:41] Agent: um, Yes, I can hear you clearly now.
+[00:07:43] Customer: I am actually driving right right now.
+[00:07:47] Agent: Please take care.
+[00:07:50] Customer: [inaudible] yes I can hear you now
+[00:07:54] Agent: Yes, I can hear you clearly now.
+[00:07:57] Agent: [crosstalk] sorry, please go ahead.
+[00:08:03] Customer: No no, you go ahead.
+[00:08:07] Customer: Can you call me back next week? I will decide by then.
+[00:08:11] Agent: so, Sure, I will schedule a callback for next Monday.
+[00:08:16] Agent: Please stay on the line, I am still checking.
+[00:08:17] [hold music]
+[00:08:21] [hold music]
+[00:08:24] [hold music]
+[00:08:28] [hold music]
+[00:08:34] [hold music]
+[00:08:38] Agent: Thank you for holding.
+[00:08:43] Agent: [crosstalk] sorry, please go ahead.
+[00:08:49] Customer: okay so No no, you go ahead.
+[00:08:53] Customer: I am in office now.
+[00:08:59] Agent: Sure, no problem at all.
+[00:09:02] Customer: Can you repeat that?
+[00:09:07] Agent: uh No problem, I will repeat.
+[00:09:07] Agent: uh No problem, I will repeat.
+[00:09:12] Customer: Sorry, the network is a bit weak here.
+[00:09:16] Agent: Yes, I can hear you clearly now.
+[00:09:21] Customer: Sorry, the network is a bit weak here.
+[00:09:26] Agent: No problem, I will repeat.
+[00:09:29] Customer: Hello? Am I audible?
+[00:09:35] Agent: Yes, I can hear you clearly now.
+[00:09:36] Agent: Please stay on the line, I am still checking.
+[00:09:39] [hold music]
+[00:09:41] [hold music]
+[00:09:47] Agent: Thank you for holding.
+[00:09:50] Agent: Let Let me pull up the details on my screen.
+[00:09:53] Customer: mm-hmm
+[00:09:56] Customer: I am in office now.
+[00:09:58] Agent: Oh, I understand.
+[00:10:01] Agent: Let me pull up the details on my screen.
+[00:10:05] Customer: No issues.
+[00:10:10] Agent: I am just updating the notes on your profile.
+[00:10:11] Customer: No issues.
+[00:10:16] Agent: On the 15th there is a debit of rupees 18,400 at an online merchant.
+[00:10:17] Customer: right
+[00:10:19] Agent: Please stay on the line, I am still checking.
+[00:10:23] [hold music]
+[00:10:26] [hold music]
+[00:10:28] Agent: Thank you for holding.
+[00:10:29] Agent: The system is a little slow today, just a moment.
+[00:10:33] Customer: so, Sure, take your time.
+[00:10:34] Agent: Please stay on the line, I am still checking.
+[00:10:35] [hold music]
+[00:10:36] [hold music]
+[00:10:38] [hold music]
+[00:10:40] [hold music]
+[00:10:44] [hold music]
+[00:10:50] [hold music]
+[00:10:56] Agent: Thank you for holding.
+[00:11:02] Customer: Hello? Am I audible?
+[00:11:07] Agent: um, No problem, I will repeat.
+[00:11:09] Agent: On the 22th there is a debit of rupees 310 at a utility biller.
+[00:11:15] Customer: yes that is mine
+[00:11:17] Agent: so, [crosstalk] sorry, please go ahead.
+[00:11:20] Customer: No no, you go ahead.
+[00:11:21] Customer: Hello? Am I audible?
+[00:11:25] Agent: um, Yes sir, you are audible.
+[00:11:30] Agent: On the 4th there is a debit of rupees 1,250 at a grocery store.
+[00:11:36] Customer: yes that is mine
+[00:11:39] Agent: Let me pull up the details on my screen.
+[00:11:45] Customer: No issues.
+[00:11:50] Agent: Please stay on the line, I am still checking.
+[00:11:53] [hold music]
+[00:11:56] [hold music]
+[00:11:57] Agent: Thank you for holding.
+[00:11:58] Agent: On the 6th there is a debit of rupees 1,250 at a grocery store.
+[00:12:03] Customer: right
+[00:12:08] Agent: Please stay on the line, I am still checking.
+[00:12:10] [hold music]
+[00:12:16] [hold music]
+[00:12:19] Agent: Thank you for holding.
+[00:12:22] Agent: On the 16th there is a debit of rupees 18,400 at a restaurant.
+[00:12:27] Customer: right
+[00:12:30] Customer: My son usually handles these things.
+[00:12:32] Agent: Sure, no problem at all.
+[00:12:33] Agent: Please stay on the line, I am still checking.
+[00:12:36] [hold music]
+[00:12:38] [hold music]
+[00:12:42] [hold music]
+[00:12:43] [hold music]
+[00:12:46] Agent: Thank you for holding.
+[00:12:51] Customer: It has been raining a lot here.
+[00:12:56] Agent: Oh, I understand.
+[00:13:01] Agent: [crosstalk] sorry, please go ahead.
+[00:13:05] Customer: No no, you go ahead.
+[00:13:09] Agent: The system is a little slow today, just a moment.
+[00:13:11] Customer: mm-hmm
+[00:13:16] Agent: [crosstalk] sorry, please go ahead.
+[00:13:17] Customer: No no, you go ahead.
+[00:13:23] Agent: [crosstalk] sorry, please go ahead.
+[00:13:27] Customer: No no, you go ahead.
+[00:13:28] Agent: Please stay on the line, I am still checking.
+[00:13:29] [hold music]
+[00:13:34] [hold music]
+[00:13:40] [hold music]
+[00:13:43] Agent: Thank you for holding.
+[00:13:47] Agent: I am just updating the notes on your profile.
+[00:13:48] Customer: Sure, take your time.
+[00:13:53] Agent: On the 25th there is a debit of rupees 640 at an online merchant.
+[00:13:57] Customer: so, mm-hmm
+[00:14:00] Customer: I am in office now.
+[00:14:02] Agent: Sure, no problem at all.
+[00:14:04] Customer: Sorry, the network is a bit weak here.
+[00:14:07] Agent: Yes, I can hear you clearly now.
+[00:14:12] Agent: [crosstalk] sorry, please go ahead.
+[00:14:18] Customer: No no, you go ahead.
+[00:14:19] Agent: Please stay on the line, I am still checking.
+[00:14:25] [hold music]
+[00:14:30] [hold music]
+[00:14:32] Agent: Thank you for holding.
+[00:14:38] Customer: I am in office now.
+[00:14:40] Agent: Sure, no problem at all.
+[00:14:45] Customer: My son usually handles these things.
+[00:14:49] Agent: um, Please take care.
+[00:14:54] Agent: [crosstalk] sorry, please go ahead.
+[00:14:58] Customer: No no, you go ahead.
+[00:15:00] Agent: [crosstalk] sorry, please go ahead.
+[00:15:02] Customer: No no, you go ahead.
+[00:15:03] Agent: On the 6th there is a debit of rupees 75 at an online merchant.
+[00:15:08] Customer: um, yes yes that is mine
+[00:15:11] Agent: Please stay on the line, I am still checking.
+[00:15:14] [hold music]
+[00:15:19] [hold music]
+[00:15:22] [hold music]
+[00:15:23] [hold music]
+[00:15:29] Agent: Thank you for holding.
+[00:15:32] Agent: [crosstalk] sorry, please go ahead.
+[00:15:35] Customer: No no, you go ahead.
+[00:15:40] Customer: I am actually driving right now.
+[00:15:44] Agent: Sure, no problem at all.
+[00:15:50] Agent: [crosstalk] sorry, please go go ahead.
+[00:15:53] Customer: No no, you go ahead.
+[00:15:55] Agent: Please stay on the line, I am still checking.
+[00:15:57] [hold music]
+[00:15:58] [hold music]
+[00:16:01] Agent: Thank you for holding.
+[00:16:04] Agent: Please stay on the line, I am still checking.
+[00:16:10] [hold music]
+[00:16:15] [hold music]
+[00:16:19] Agent: Thank you for holding.
+[00:16:25] Agent: On the 15th there is a debit of rupees 1,250 at a fuel station.
+[00:16:31] Customer: uh yes that is mine
+[00:16:35] Agent: I am just updating the notes on your profile.
+[00:16:36] Customer: Sure, take your time.
+[00:16:37] Agent: [crosstalk] sorry, please go ahead.
+[00:16:42] Customer: No no, you go ahead.
+[00:16:47] Agent: Please stay on the line, I am still checking.
+[00:16:52] [hold music]
+[00:16:56] [hold music]
+[00:16:58] Agent: Thank you for holding.
+[00:16:59] Agent: On the 16th there is a debit of rupees 640 at a restaurant.
+[00:17:00] Customer: mm-hmm
+[00:17:03] Agent: [crosstalk] sorry, please go ahead.
+[00:17:07] Customer: No no, you go ahead.
+[00:17:10] Agent: On the 15th there is a debit of rupees 1,250 at a restaurant.
+[00:17:14] Customer: uh-huh
+[00:17:18] Customer: I am in office now.
+[00:17:19] Agent: Oh, I understand.
+[00:17:20] Agent: On the 15th there is a debit of rupees 75 at a fuel station.
+[00:17:21] Customer: uh-huh
+[00:17:27] Agent: [crosstalk] sorry, please go ahead.
+[00:17:31] Customer: um, No no, you go ahead.
+[00:17:37] Customer: I am in office now.
+[00:17:42] Agent: Oh, I understand.
+[00:17:45] Agent: Please stay on the line, I am still checking.
+[00:17:46] [hold music]
+[00:17:49] [hold music]
+[00:17:54] [hold music]
+[00:17:59] [hold music]
+[00:18:03] [hold music]
+[00:18:08] [hold music]
+[00:18:12] Agent: Thank you for holding.
+[00:18:17] Agent: On the 25th there is a debit of rupees 310 at an online merchant.
+[00:18:22] Customer: yes that is mine
+[00:18:26] Agent: I am just updating the notes on your profile.
+[00:18:28] Customer: Sure, take your time.
+[00:18:33] Agent: On the 20th there is a debit of rupees 2,999 at a pharmacy.
+[00:18:37] Customer: right
+[00:18:41] Customer: Hello? Am I audible?
+[00:18:44] Agent: No problem, problem, I will repeat.
+[00:18:50] Customer: Can you repeat that?
+[00:18:56] Agent: No problem, I will repeat.
+[00:18:59] Customer: My son usually handles these things.
+[00:19:00] Agent: Please take care.
+[00:19:01] Agent: [crosstalk] sorry, please go ahead.
+[00:19:07] Customer: No no, you go ahead.
+[00:19:11] Customer: It has been raining a lot here.
+[00:19:13] Agent: Please take care.
+[00:19:16] Agent: I am just updating the notes on your profile.
+[00:19:17] Customer: No issues.
+[00:19:22] Agent: On the 14th there is a debit of rupees 640 at a pharmacy.
+[00:19:24] Customer: uh uh-huh
+[00:19:26] Agent: [crosstalk] sorry, please go ahead.
+[00:19:28] Customer: No no, you go ahead.
+[00:19:33] Agent: so, [crosstalk] sorry, please go ahead.
+[00:19:39] Customer: No no, you go ahead.
+[00:19:44] Agent: [crosstalk] sorry, please go ahead.
+[00:19:49] Customer: No no, you go ahead.
+[00:19:54] Agent: Let me pull up the details on my screen.
+[00:19:57] Customer: No issues.
+[00:20:00] Agent: Please stay on the line, I am still checking.
+[00:20:06] [hold music]
+[00:20:10] [hold music]
+[00:20:15] Agent: Thank you for holding.
+[00:20:18] Agent: Please stay on the line, I am still checking.
+[00:20:22] [hold music]
+[00:20:28] [hold music]
+[00:20:30] [hold music]
+[00:20:31] [hold music]
+[00:20:34] [hold music]
+[00:20:36] [hold music]
+[00:20:42] Agent: Thank you for holding.
+[00:20:43] Agent: [crosstalk] sorry, please go ahead.
+[00:20:46] Customer: No no, you go ahead.
+[00:20:50] Agent: The system is a little slow today, just a moment.
+[00:20:53] Customer: Okay.
+[00:20:58] Agent: Let me pull up the details on my screen.
+[00:20:59] Customer: Okay.
+[00:21:03] Agent: Let me pull up the details on my screen.
+[00:21:04] Customer: Okay.
+[00:21:08] Agent: um, On the 12th there is a debit of rupees 310 at a grocery store.
+[00:21:12] Customer: right
+[00:21:18] Agent: Please stay on the line, I am still checking.
+[00:21:21] [hold music]
+[00:21:24] [hold music]
+[00:21:28] [hold music]
+[00:21:31] [hold music]
+[00:21:35] Agent: Thank you for holding.
+[00:21:37] Agent: Let me pull up the details on my screen.
+[00:21:43] Customer: Sure, take your time.
+[00:21:45] Customer: um, Sorry, the network is a bit weak here.
+[00:21:51] Agent: okay so Yes sir, you are audible.
+[00:21:57] Agent: Please stay on the line, I am still checking.
+[00:22:00] [hold music]
+[00:22:05] [hold music]
+[00:22:10] [hold music]
+[00:22:14] Agent: Thank you for holding.
+[00:22:17] Customer: okay so Can you repeat that?
+[00:22:20] Agent: Yes, I can hear you clearly now.
+[00:22:24] Agent: Please stay on the line, I am still checking.
+[00:22:29] [hold music]
+[00:22:30] [hold music]
+[00:22:32] [hold music]
+[00:22:38] [hold music]
+[00:22:44] [hold music]
+[00:22:49] Agent: Thank you for holding.
+[00:22:55] Agent: so, On the 9th there is a debit of rupees 75 at a utility biller.
+[00:23:00] Customer: uh-huh
+[00:23:01] Agent: Please stay on the line, I am still checking.
+[00:23:02] [hold music]
+[00:23:04] [hold music]
+[00:23:10] [hold music]
+[00:23:13] [hold music]
+[00:23:17] Agent: Thank you for holding.
+[00:23:18] Agent: I am just updating the notes on your profile.
+[00:23:23] Customer: so, No issues.
+[00:23:27] Agent: Please stay on the line, I am still checking.
+[00:23:33] [hold music]
+[00:23:35] [hold music]
+[00:23:39] [hold music]
+[00:23:43] [hold music]
+[00:23:47] Agent: Thank you for holding.
+[00:23:48] Customer: Sorry, the network is a bit weak here.
+[00:23:49] Agent: Yes sir, you are audible.
+[00:23:55] Agent: [crosstalk] sorry, please go ahead.
+[00:24:01] Customer: No no, you go ahead.
+[00:24:03] Agent: The system is a little slow today, just a moment.
+[00:24:09] Customer: No issues.
+[00:24:13] Agent: [crosstalk] sorry, please go ahead.
+[00:24:16] Customer: No no, you go ahead.
+[00:24:22] Agent: The system is a little slow today, just a moment.
+[00:24:23] Customer: uh Sure, take your time.
+[00:24:25] Agent: On the 25th there is a debit of rupees 75 at an online merchant.
+[00:24:28] Customer: yes that is mine
+[00:24:34] Agent: [crosstalk] sorry, please go ahead.
+[00:24:39] Customer: No no, you go ahead.
+[00:24:43] Customer: Hello? Am I audible?
+[00:24:45] Agent: Yes, I can hear you clearly now.
+[00:24:51] Agent: [crosstalk] sorry, please go ahead.
+[00:24:56] Customer: um, No no, you go ahead.
+[00:24:58] Agent: Please stay on the line, I am still checking.
+[00:25:03] [hold music]
+[00:25:07] [hold music]
+[00:25:13] [hold music]
+[00:25:17] [hold music]
+[00:25:22] [hold music]
+[00:25:25] Agent: Thank you for holding.
+[00:25:26] Agent: Please stay on the line, I am still checking.
+[00:25:28] [hold music]
+[00:25:29] [hold music]
+[00:25:32] Agent: Thank you for holding.
+[00:25:35] Agent: Please stay on the line, I am still checking.
+[00:25:40] [hold music]
+[00:25:41] [hold music]
+[00:25:47] Agent: Thank you for holding.
+[00:25:52] Agent: The system is a little slow today, just a moment.
+[00:25:52] Agent: The system is a little slow today, just a moment.
+[00:25:53] Customer: Sure, take your time.
+[00:25:58] Customer: It has been raining a lot here.
+[00:25:59] Agent: okay so Sure, no problem at all.
+[00:26:03] Agent: I am just updating the notes on your profile.
+[00:26:03] Agent: I am just updating the notes on your profile.
+[00:26:09] Customer: No issues.
+[00:26:10] Agent: [crosstalk] sorry, please go ahead.
+[00:26:12] Customer: No no, you go ahead.
+[00:26:14] Agent: Let me pull up the details on my screen.
+[00:26:20] Customer: Okay.
+[00:26:23] Agent: I am just updating the notes on your profile.
+[00:26:27] Customer: Sure, take your time.
+[00:26:28] Agent: [crosstalk] sorry, please go ahead.
+[00:26:33] Customer: No no, you go ahead.
+[00:26:36] Agent: um, I am just updating the notes on your your profile.
+[00:26:37] Customer: Okay.
+[00:26:41] Agent: uh Let me pull up the details on my screen.
+[00:26:44] Customer: okay so Sure, take your time.
+[00:26:50] Agent: Please stay on the line, I am still checking.
+[00:26:55] [hold music]
+[00:27:00] [hold music]
+[00:27:04] Agent: Thank you for holding.
+[00:27:08] Agent: Please stay on the line, I am still checking.
+[00:27:10] [hold music]
+[00:27:15] [hold music]
+[00:27:20] [hold music]
+[00:27:22] [hold music]
+[00:27:24] [hold music]
+[00:27:29] Agent: Thank you for holding.
+[00:27:34] Agent: On the 20th there is a debit of rupees 18,400 at a utility biller.
+[00:27:39] Customer: okay
+[00:27:44] Customer: uh Can you repeat that?
+[00:27:46] Agent: No problem, I will repeat.
+[00:27:50] Customer: Can you repeat that?
+[00:27:54] Agent: Yes, I can hear you clearly now.
+[00:27:56] Agent: On the 3th there is a debit of rupees 1,250 at a fuel station.
+[00:28:01] Customer: okay so uh-huh
+[00:28:03] Agent: On the 1th there is a debit of rupees 2,999 at a pharmacy.
+[00:28:09] Customer: uh-huh
+[00:28:13] Customer: My son usually handles these things.
+[00:28:18] Agent: Oh, I understand.
+[00:28:21] Customer: I am in office now.
+[00:28:24] Agent: Oh, I understand.
+[00:28:30] Agent: On the 20th there is a debit of rupees 310 at a fuel station.
+[00:28:33] Customer: mm-hmm
+[00:28:38] Agent: Please stay on the line, I am still checking.
+[00:28:41] [hold music]
+[00:28:42] [hold music]
+[00:28:47] [hold music]
+[00:28:53] [hold music]
+[00:28:59] [hold music]
+[00:29:01] Agent: Thank you for holding.
+[00:29:04] Agent: Let me pull pull up the details on my screen.
+[00:29:07] Customer: Sure, take your time.
+[00:29:11] Agent: Please stay on the line, I am still checking.
+[00:29:15] [hold music]
+[00:29:20] [hold music]
+[00:29:24] [hold music]
+[00:29:25] [hold music]
+[00:29:28] [hold music]
+[00:29:31] [hold music]
+[00:29:34] Agent: Thank you for holding.
+[00:29:36] Agent: Please stay on the line, I am still checking.
+[00:29:42] [hold music]
+[00:29:46] [hold music]
+[00:29:50] [hold music]
+[00:29:52] [hold music]
+[00:29:56] [hold music]
+[00:30:00] Agent: Thank you for holding.
+[00:30:03] Agent: Is there anything else I can help you with today?
+[00:30:09] Customer: No, that's all. Thank you.
+[00:30:10] Agent: Thank you for calling Horizon Bank, have a great day Amit.
